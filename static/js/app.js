@@ -64,7 +64,7 @@ function createBar(selectedValue){
 
         //apply layout to bar chart
         let layout = {
-            title: `Top 10 OTUs Present in ${selectedValue}`
+            title: `Top 10 OTUs Present in Subj ID: ${selectedValue}`
         };
 
         //plot the bar using Plotly
@@ -107,7 +107,7 @@ function createBubble(selectedValue){
 
         //apply layout to bar chart
         let layout = {
-            title: `Bacteria Count in ${selectedValue}`,
+            title: `Bacteria Count in Subj ID: ${selectedValue}`,
             xaxis: {title: "OTU ID"}
         };
 
@@ -144,13 +144,13 @@ function createDemos(selectedValue){
     });
 };
 
-// //define the function when the dropdown detects a change (function name as defined in index.html)
-function optionChanged(value){
+//define the function when the dropdown detects a change (function name as defined in index.html)
+function optionChanged(newValue){
     //log the value for debug
-    console.log(value);
-    createBar(value);
-    createBubble(value);
-    createDemos(value);
+    console.log(newValue);
+    createBar(newValue);
+    createBubble(newValue;
+    createDemos(newValue);
 };
 
 initialize();
