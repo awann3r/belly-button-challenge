@@ -64,7 +64,7 @@ function createBar(selectedValue){
 
         //apply layout to bar chart
         let layout = {
-            title: `Top 10 OTUs Present in Subj ID: ${selectedValue}`
+            title: `Top 10 OTUs Present in ID: ${selectedValue}`
         };
 
         //plot the bar using Plotly
@@ -107,7 +107,7 @@ function createBubble(selectedValue){
 
         //apply layout to bar chart
         let layout = {
-            title: `Bacteria Count in Subj ID: ${selectedValue}`,
+            title: `Bacteria Count in ID: ${selectedValue}`,
             xaxis: {title: "OTU ID"}
         };
 
@@ -149,7 +149,7 @@ function optionChanged(newValue){
     //log the value for debug
     console.log(newValue);
     createBar(newValue);
-    createBubble(newValue;
+    createBubble(newValue);
     createDemos(newValue);
 };
 
